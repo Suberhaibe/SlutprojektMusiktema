@@ -1,22 +1,49 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>MusikEvolving</title>
-    </head>
-    <body>
-        <header>
-        <h1>MusikEvolving</h1>
-        <nav>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="Tidslinje.html">Tidslinge</a></li>
-            <li><a href="Musikgerner.html">Musikgenrer</a></li>
-            <li><a href="Händelser.html">Händelser</a></li>
-            <li><a href="Omoss.html">Om oss</a></li>
-        </nav>
+<!DOCTYPE html> <!--Detta deklarerar att dokumentet är en HTML-version5-->
+<html lang="sv"><!--hemsidans språk-->
+<head> <!--visas ej på hemsidan-->
+    <meta charset="UTF-8"> <!--Teckenkodningen som används på webbsidan-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Dokumentkompatibiliteten för internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställar in visningsporten för mobilanpassning-->
+    <link rel="stylesheet" href="style.css"><!--länk till css-->
+    <title>itutbildningstöd</title><!--titeln på webbsidan som visas i webbläsarfliken-->
+</head>
+<body> <!--synas i hemsidan-->
+    <div class="wrapper"> <!--skapar en div med klassen wrapper som används för att gruppera innehåll i webbsidan-->
+        <header> <!--sidhuvudet i webbsidan-->
+            <!--Sätter en rubrik i huvudet på hemsidan-->
+            <h1>IT-UTBILDNING STÖD</h1>
+            <!--Navigerings meny-->
+            <nav>
+                <ul> <!--oordnat lista för navigaionsmenyn-->
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="Tidslinje.html">Tidslinge</a></li>
+                    <li><a href="Musikgerner.html">Musikgenrer</a></li>
+                    <li><a href="Händelser.html">Händelser</a></li>
+                    <li><a href="Omoss.html">Om oss</a></li>
+                </ul>
+            </nav>
         </header>
-    </body>
+         <main> <!--huvudinnehållet-->
+              <section> <!--skapar en sektion i huvudinnehållet-->
+                 <h1>Välkomna till IT-UTBILDNING</h1> <!--Rubrik till översta-->
+                 <p>vi hjälper dig grunderna till webbutveckling 1 och programmering.</p>
+                 <img src="https://ingenjoren.se/uploads/2022/06/it_examen_GettyImages.jpg" alt="bild">
+            </section>
+            <section>
+                 <img src="https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png" alt="htmlcss">
+                <img src="https://www.codeguru.com/wp-content/uploads/2021/08/C-Sharp-Tutorials.png" alt="csharp">
+             </section>
+        </main>
+       <footer>
+            <section>
+                <ul>
+                     <li>Gamla Norrvägen 6-8,</li>
+                    <li>Gamla Norrvägen 6-8 352 43</li>
+                     <li>Num: 0470-419 00</li>
+                     <li>E-post:teknikum@vaxjo.se</li>
+                 </ul>
+             </section>
+     </footer>    
+    </div>
+</body>
 </html>
