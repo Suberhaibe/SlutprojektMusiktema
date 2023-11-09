@@ -83,24 +83,6 @@ li a:hover { /* ändrar färgen när användaren hoverar */
     width: 500px;
   }
 
-  form{ /* stylar formulär */
-    grid-area:main;
-    margin:auto;
-    border-radius: 2px;
-    padding: 23px;
-    text-align: center;
-
-}
-
-input{ /* stylar input elementen i formuläret */
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-label{ /* stylar etiketterna i förmuläret */
-    font-size: 40px;
-}
-
 iframe{ /* stylar allt som är bäddat in en annan webbsida på sin egen sida i detta fallet min youtube vedio */
   width: 450px;
   height: 250px;
@@ -121,3 +103,21 @@ iframe{ /* stylar allt som är bäddat in en annan webbsida på sin egen sida i 
   }
 
   @media screen (max-width: 800px) {  } /* justerar utseendet på webbsidan för enheter */
+
+  .form{ /*allt i formul id har bakgrunden vit och centrerad text*/
+    text-align: center;
+     background-color: white;
+   
+ }
+ 
+ ol{/*texten i order listan ligger till vänster*/
+     text-align: left;
+ }
+ article{ /* allt i article har larger text och en annan font*/
+     text-align: center;
+     font-size:larger;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .tabelli tr:nth-child(odd){ /*gör så klassen för tabellen har en viss färg för varje ojämn rad*/
+     background-color: lightblue;
+ }
