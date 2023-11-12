@@ -1,123 +1,35 @@
 .wrapper{ /* klass som används för att definiera en grid layout med fyra kolumner */
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr ;
-    grid-template-columns: auto;
+    grid-template-columns: 100px 80px auto 50px;
     grid-template-areas: 
     "header"
     "nav"
     "main"
     "footer";
-    text-align: center; /* sätter center för allt innehållet */
   }
 
 
 header{ /* stylar header elementet */
     grid-area: header;
-    text-align: center;
-    background-color: gray;
-    padding: 15px; /* lägger till utrymme mellan elementets innehål och dess ram */
-    margin: 0;
-
 }
-
 
 nav{ /* stylar nav elementet genom att centrera det och lägga till en padding */
     grid-area: nav;
-    padding: 10px;
 }
 
-nav ul{ /* skapar ett gridlayout för listan */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content:center ;
-    justify-items: center;
-    padding: 0%;
-    margin: 0%;
-}
-nav li{ /* riktar sig till all listelement */
-    list-style: none;
-    text-align: center;
-    font-size: 12px;
+nav>ul{
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 1fr;
 }
 
-nav a{ /* stylar länkarna i nav elementet */
-    text-decoration: none;
-    background-color: black;
-    padding: 15px;
-    color: white;
-    border-radius: 10px;
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-li a:hover { /* ändrar färgen när användaren hoverar */
-    background-color: orange;
-  }
-
-
-  #Begrepp { /* formolerar taballen en särskild ID */
-    border-collapse: collapse; /* slås gränserna ihop til en enda linje */
-    width: 100%;
-  }
-
-  #Begrepp td, #Begrepp th { /* riktar sig til td och th  element */
-    border-radius: 2px #ddd;
-    padding: 5px;
-    border-radius: 25px;
-    text-align: center;
-  
-  }
-
-  
-  #Begrepp tr:nth-child(even){background-color: #9da74c;}/* lägger till en bakgrundsfärg på varannan rad i tabellen och den väljar alla jämna radnummer */
-  
-  #Begrepp tr:hover {background-color: #d1a734;} /* aktiveras muspekaren när användren befinner sig över tr rad med färg */
-  
-  #Begrepp th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    background-color:orange;
-    color: white;
-  }
-
-  .wrapper img {  /* stylar bilderna */
-    width: 500px;
-  }
-
-iframe{ /* stylar allt som är bäddat in en annan webbsida på sin egen sida i detta fallet min youtube vedio */
-  width: 450px;
-  height: 250px;
-  border: 1em;
-  border-style: solid;
-  border-color: rgb(54, 153, 107);
-  border-radius: 30px;
+footer{
+  grid-area: footer;
+  text-align: center;
+  background-color: yellow;
 }
-
-  footer ul{ /* stylar footrer elementet som är sidansfot */
-    grid-area: footer;
-    text-align: center;
-    color:black;
-    background-color: orange;
-    padding: 50px;
-    justify-content: center;
-    list-style:none;
-  }
-
-  @media screen (max-width: 800px) {  } /* justerar utseendet på webbsidan för enheter */
-
-  .form{ /*allt i formul id har bakgrunden vit och centrerad text*/
-    text-align: center;
-     background-color: white;
-   
- }
- 
- ol{/*texten i order listan ligger till vänster*/
-     text-align: left;
- }
- article{ /* allt i article har larger text och en annan font*/
-     text-align: center;
-     font-size:larger;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
- .tabelli tr:nth-child(odd){ /*gör så klassen för tabellen har en viss färg för varje ojämn rad*/
-     background-color: lightblue;
- }
