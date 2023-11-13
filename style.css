@@ -1,11 +1,12 @@
 .wrapper{ /* klass som används för att definiera en grid layout med fyra kolumner */
     display:grid;
-    grid-template-columns: 100px 80px auto 50px;
+    grid-template-columns: 2fr auto auto auto;
     grid-template-areas: 
     "header"
     "nav"
     "main"
     "footer";
+    background-color: rgb(227, 238, 232);
   }
 
 
@@ -15,11 +16,34 @@ header{ /* stylar header elementet */
 
 nav{ /* stylar nav elementet genom att centrera det och lägga till en padding */
     grid-area: nav;
+    background-color: orange;
+    padding: 10px;
+    width: 500px;
+    justify-content: center;
+    justify-items: center;
 }
 
 nav>ul{
   display: grid;
-  grid-template-columns: 10fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav li{ /* riktar sig till all listelement */
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+}
+
+nav a{ /* stylar länkarna i nav elementet */
+  text-decoration: none;
+  background-color: black;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+}
+
+li a:hover { /* ändrar färgen när användaren hoverar */
+  background-color: orange;
 }
 
 main{
@@ -32,4 +56,5 @@ footer{
   grid-area: footer;
   text-align: center;
   background-color: yellow;
+  padding: 10px;
 }
