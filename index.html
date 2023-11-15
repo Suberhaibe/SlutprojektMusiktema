@@ -1,68 +1,77 @@
 <!DOCTYPE html> <!--Detta deklarerar att dokumentet är en HTML-version5-->
 <html lang="sv"><!--hemsidans språk-->
 <head> <!--visas ej på hemsidan-->
-    <meta charset="UTF-8"> <!--Teckenkodningen som används på webbsidan-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Dokumentkompatibiliteten för internet Explorer-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställar in visningsporten för mobilanpassning-->
-    <link rel="stylesheet" href="style.css"><!--länk till css-->
-    <title>Musikevolving</title><!--titeln på webbsidan som visas i webbläsarfliken-->
+  <meta charset="UTF-8"> <!--Teckenkodningen som används på webbsidan-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Dokumentkompatibiliteten för internet Explorer-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställar in visningsporten för mobilanpassning-->
+  <link rel="stylesheet" href="style.css"><!--länk till css-->
+  <title>Musikevolving</title><!--titeln på webbsidan som visas i webbläsarfliken-->
 </head>
-<body> <!--synas i hemsidan-->
-    <div class="wrapper"> <!--skapar en div med klassen wrapper som används för att gruppera innehåll i webbsidan-->
-        <header>
-            <h1>MUSIKEVOLVING</h1>
-        </header>
-            <nav>
-                <ul> <!--oordnat lista för navigaionsmenyn-->
-                    <li><a href="index.html">Startsida</a></li>
-                    <li><a href="Tidslinje.html">Tidslinge</a></li>
-                    <li><a href="Musikgerner.html">Musikgenrer</a></li>
-                    <li><a href="Omoss.html">Om oss</a></li>
-                </ul>
-            </nav>
-        <main> <!--huvudinnehållet-->
-            <section> <!--skapar en sektion i huvudinnehållet-->
-                <p>
-                    Välkommen till vår musikhistoria webbplats! Utforska de fascinerande tonerna och rytmerna som har präglat olika epoker och kulturer genom tiderna.
-                    Från antika melodier till dagens moderna kompositioner, följ med oss på en resa genom musikens utveckling.
-                    Upptäck viktiga händelser, inflytelserika kompositörer och de revolutionerande genrerna som har format vår musikaliska värld.
-                    Oavsett om du är nybörjare eller en erfaren musikentusiast, finns här något för alla att upptäcka och uppskatta.
-                    Dyk in i musikens rika historia och låt noterna berätta sina historier.
-                </p>
-                 <img src="https://afrob.tv/wp-content/uploads/2020/10/musical-instruments-history.png" alt="bild">
-            </section>
-            <section>
-                <h2>Här har vi samlat kort informationtabell om musik scener här i Växjö 2023</h2>
-                <tr>
-                    <th>Event</th>
-                    <th>När och tid</th>
-                  </tr>
-                  <tr>
-                    <td>Musikhjälpen</td>
-                    <td>Den 11 till 17 december sänds Musikhjälpen från stortorget i Växjö.<td>
-                  </tr>
-                  <tr>
-                    <td>Nanne the best</td>
-                    <td>16 Nov är en hyllningsshow till en av de absolut största kvinnliga artisterna någonsin kan du biljetterna online, biljett@scalateatern.com </td>
-                  </tr>
-                  <tr>
-                    <td>Lasse Stefanz</td>
-                    <td>Lasse Stefanz har sålt miljontals skivor,Boka biljetter,biljett@scalateatern.com Välkomment till Växjö konserhus </td>
-                  </tr>
-                  <tr>
-                    <td>Noice band</td>
-                    <td>2 December Upplev NOICE - I NATT ÄR HELA STAN VÅR på Växjö Konserthus, den 24 november 2023.Biljetter säljs vi Ticketmaster.</td>
-                  </tr>
-                  <tr>
-                    <td>Martin Stenmarck lirar Elvis</td>
-                    <td>Välkommen till Växjö Konserthus, Detta är en chans att ta del av något unikt och minnesvärt, Boka biljetter på ticketmaster.se </td>
-                  </tr>
-                </table>
-            </section>
-        </main>
-       <footer>
-        <h2>Skapat av Suber</h2>
-       </footer>    
-    </div>
+<body id="index"> <!--synas i hemsidan och id för att ändra layout bara i index-->
+  <div class="wrapper"> <!--skapar en div med klassen wrapper som används för att gruppera innehåll i webbsidan-->
+    <header>
+        <h1>MUSIKEVOLVING</h1>
+    </header>
+    <nav>
+      <ul> <!--oordnat lista för navigaionsmenyn-->
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="Tidslinje.html">Tidslinje</a></li>
+        <li><a href="Musikgerner.html">Musikgenrer</a></li>
+        <li><a href="Omoss.html">Om oss</a></li>
+      </ul>
+    </nav>
+    <main> <!--huvudinnehållet-->
+      <section> <!--skapar en sektion i huvudinnehållet-->
+        <article>
+          <h2>Musikhistoria</h2>
+          <p>
+          Välkommen till vår musikhistoria webbplats! Utforska de fascinerande tonerna och rytmerna som har präglat olika epoker och kulturer genom tiderna.
+          Från antika melodier till dagens moderna kompositioner, följ med oss på en resa genom musikens utveckling.
+          Upptäck viktiga händelser, inflytelserika kompositörer och de revolutionerande genrerna som har format vår musikaliska värld.
+          Oavsett om du är nybörjare eller en erfaren musikentusiast, finns här något för alla att upptäcka och uppskatta.
+          Dyk in i musikens rika historia och låt noterna berätta sina historier.
+          </p>
+        </article>
+          <figure>
+            <img src="https://afrob.tv/wp-content/uploads/2020/10/musical-instruments-history.png" alt="bild">
+            <figcaption>Bild: Musik i olika epoker</figcaption>
+          </figure> <!--Säger till vad bilden innehåller-->
+      </section>
+      <section>
+        <article>
+          <h2>Här har vi samlat kort informationtabell om musik scener här i Växjö 2023</h2>
+        </article>
+        <table>
+          <tr>
+            <th>Event</th>
+            <th>När och tid</th>
+          </tr>
+          <tr>
+            <td>Musikhjälpen</td>
+            <td>Den 11 till 17 december sänds Musikhjälpen från stortorget i Växjö.</tr>
+          </tr>
+          <tr>
+            <td>Nanne the best</td>
+            <td>16 Nov är en hyllningsshow till en av de absolut största kvinnliga artisterna någonsin kan du biljetterna online, biljett@scalateatern.com </td>
+          </tr>
+          <tr>
+            <td>Lasse Stefanz</td>
+            <td>Lasse Stefanz har sålt miljontals skivor,Boka biljetter,biljett@scalateatern.com Välkomment till Växjö konserhus </td>
+          </tr>
+          <tr>
+            <td>Noice band</td>
+            <td>2 December Upplev NOICE - I NATT ÄR HELA STAN VÅR på Växjö Konserthus, den 24 november 2023.Biljetter säljs vi Ticketmaster.</td>
+          </tr>
+          <tr>
+            <td>Martin Stenmarck lirar Elvis</td>
+            <td>Välkommen till Växjö Konserthus, Detta är en chans att ta del av något unikt och minnesvärt, Boka biljetter på ticketmaster.se </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <h2>Skapat av Suber</h2>
+    </footer>    
+  </div>
 </body>
 </html>

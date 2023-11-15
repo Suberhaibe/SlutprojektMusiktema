@@ -1,26 +1,49 @@
+body{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.1em; /*Text storlek*/
+  margin: 0; /* Tarbort allt margin */
+  padding: 0; /* Tarbort allt padding */
+  background-color: rgb(213, 241, 226);
+}
+
 .wrapper{ /* klass som används för att definiera en grid layout med fyra kolumner */
-    display:grid;
-    grid-template-columns: 2fr auto auto auto;
-    grid-template-areas: 
+  display:grid;
+  grid-template-columns: 2fr auto auto auto;
+  grid-template-areas: 
     "header"
     "nav"
     "main"
     "footer";
-    background-color: rgb(227, 238, 232);
-  }
+}
 
 
 header{ /* stylar header elementet */
-    grid-area: header;
+  grid-area: header;
+  text-align: center;
+  background-color: orange;
+}
+
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#index main{
+  grid-template-columns: 1fr 1fr;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+  background-color: orange;
+  padding: 10px;
 }
 
 nav{ /* stylar nav elementet genom att centrera det och lägga till en padding */
-    grid-area: nav;
-    background-color: orange;
-    padding: 10px;
-    width: 500px;
-    justify-content: center;
-    justify-items: center;
+  grid-area: nav;
+  background-color: orange;
+  padding: 10px;
 }
 
 nav>ul{
@@ -38,23 +61,37 @@ nav a{ /* stylar länkarna i nav elementet */
   text-decoration: none;
   background-color: black;
   padding: 15px;
-  color: white;
+  color: #FFFFFF;
   border-radius: 10px;
 }
 
 li a:hover { /* ändrar färgen när användaren hoverar */
-  background-color: orange;
+  background-color: rgb(128, 128, 128);
 }
 
-main{
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-footer{
-  grid-area: footer;
+p, h1, h2, h3, img, figcaption{
   text-align: center;
-  background-color: yellow;
-  padding: 10px;
+  margin: 15px;
+
+}
+
+img, iframe{
+  display: block;
+  margin-left: auto; /* Center */
+  margin-right: auto; /* Center */
+  margin-bottom: 15px;
+  width: 750px;
+  height: 500px;
+}
+
+
+table, td, th{
+  margin: 15px;
+  padding: 15px; 
+  border: solid 3px #FFD700; 
+  border-collapse: collapse; 
+}
+
+@media screen and (max-width : 800px) {
+  
 }
